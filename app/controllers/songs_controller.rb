@@ -28,7 +28,7 @@ class SongsController < ApplicationController
       end
       
     else
-      @songs = Song.all
+       @song = Song.find(params[:id])
     end 
   end
 
